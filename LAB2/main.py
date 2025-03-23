@@ -26,9 +26,9 @@ history_worst = model_populacji(poczatkowa_populacja, r_worst, lata)
 years_range = np.arange(0, lata + 1)
 
 plt.figure(figsize=(10, 6))
-plt.plot(years_range, history_best, label="Best Case (r = 0.0194)", color='g')
-plt.plot(years_range, history_average, label="Average Case (r = -0.0324)", color='b')
-plt.plot(years_range, history_worst, label="Worst Case (r = -0.0382)", color='r')
+plt.plot(years_range, history_best, label="Best Case (r = 0.0194)", color='g', marker='o')
+plt.plot(years_range, history_average, label="Average Case (r = -0.0324)", color='b', marker='d')
+plt.plot(years_range, history_worst, label="Worst Case (r = -0.0382)", color='r', marker='s')
 
 plt.title('Model Populacji Żurawia')
 plt.xlabel('Rok')
